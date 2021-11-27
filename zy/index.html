@@ -1,148 +1,165 @@
-<!DOCTYPE html>
-<!-- saved from url=(0072)https://meyerzhao-lab.gitee.io/full-video-background-landing-page/#about -->
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zy</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
     <link rel="stylesheet" href="./data/style.css">
 
     <link rel="stylesheet" href="./data/font-awesome.min.css">
     <link rel="stylesheet" href="./data/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./data/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
     <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@4/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./data/viewer.css">
-    <title>塔科夫</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Riviera Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1200);
+            });
+        });
+    </script>
+
+
 </head>
 
-
 <body>
-
-    <body background="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111061313716.jpg">
-        <section class=" showcase ">
-            <div class="video-container ">
-            </div>
+    <!-- header -->
+    <div class="banner">
+        <div class="container">
 
 
-            <div class="wrapper ">
-                <h1>逃离塔科夫<span>&nbsp;</span></h1>
-                <br>
-                <div id="galley">
-                    <ul class="pictures">
-                        <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020696.jpg" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022409.png" alt="储备站"></li>
-                        <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020697.jpg" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022411.png" alt="海岸线"></li>
-                        <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020698.png" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022410.png" alt="海关"></li>
-                        <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020692.png" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022412.png" alt="森林"></li>
-                        <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052014517.jpg" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022407.png" alt="子弹"></li>
-                        <!-- <li><img data-original="" src="" alt=""></li> -->
-
-                    </ul>
-                </div>
-            </div>
-
-            <script src="./data/jquery.slim.min.js"></script>
-            <script src="./data/bootstrap.bundle.min.js "></script>
-            <script src="./data/viewer.js"></script>
-            <script>
-                window.addEventListener('DOMContentLoaded', function() {
-                    var galley = document.getElementById('galley');
-                    var viewer = new data(galley, {
-                        url: 'data-original',
-                        toolbar: {
-                            oneToOne: true,
-
-                            prev: function() {
-                                viewer.prev(true);
-                            },
-
-                            play: true,
-
-                            next: function() {
-                                viewer.next(true);
-                            },
-
-                            download: function() {
-                                const a = document.createElement('a');
-
-                                a.href = viewer.image.src;
-                                a.download = viewer.image.alt;
-                                document.body.appendChild(a);
-                                a.click();
-                                document.body.removeChild(a);
-                            },
-                        },
-                    });
-                });
-            </script>
-
-            <script src="https://unpkg.com/jquery@3/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/bootstrap@4/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-            <script src="./data/viewer.js"></script>
-            <script>
-                window.addEventListener('DOMContentLoaded', function() {
-                    var galley = document.getElementById('galley');
-                    var viewer = new Viewer(galley, {
-                        url: 'data-original',
-                        title: function(image) {
-                            return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
-                        },
-                    });
-                });
-            </script>
-            </div>
-        </section>
-        <style>
-            .pictures>li {
-                border: 1px solid transparent;
-                float: left;
-                height: calc(100% / 1);
-                margin: 0 -1px -1px 0;
-                overflow: hidden;
-                width: calc(100% / 5);
-            }
-            
-            .pictures>li>img {
-                cursor: zoom-in;
-                width: 100%;
-            }
-            
-            .viewer-download {
-                color: #fff;
-                font-family: FontAwesome, serif;
-                font-size: 0.75rem;
-                line-height: 1.5rem;
-                text-align: center;
-            }
-            
-            .viewer-download::before {
-                content: "\f019";
-            }
-            
-            h4 {
-                text-align: center;
-                color: #fff;
-            }
-        </style>
-
-
-        <section id="about ">
-            <h4>
-                2021
-                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-            </h4>
-
+            <!-- script-for-nav -->
+            <div class="logo">
 
             </div>
-        </section>
+            <div class="banner-info">
+                <br> <br>
+                <p>逃离塔科夫 </p>
+            </div>
+        </div>
+    </div>
+    <div id="galley">
+        <ul class="pictures">
+            <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020696.jpg" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022409.png" alt="储备站"></li>
+            <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020697.jpg" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022411.png" alt="海岸线"></li>
+            <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020698.png" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022410.png" alt="海关"></li>
+            <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052020692.png" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022412.png" alt="森林"></li>
+            <li><img data-original="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052014517.jpg" src="https://cdn.jsdelivr.net/gh/lztttt/pic/img/202111052022407.png" alt="子弹"></li>
+            <!-- <li><img data-original="" src="" alt=""></li> -->
 
-    </body>
+        </ul>
+    </div>
+    <script src="./data/jquery.slim.min.js"></script>
+    <script src="./data/bootstrap.bundle.min.js "></script>
+    <script src="./data/viewer.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var galley = document.getElementById('galley');
+            var viewer = new data(galley, {
+                url: 'data-original',
+                toolbar: {
+                    oneToOne: true,
+
+                    prev: function() {
+                        viewer.prev(true);
+                    },
+
+                    play: true,
+
+                    next: function() {
+                        viewer.next(true);
+                    },
+
+                    download: function() {
+                        const a = document.createElement('a');
+
+                        a.href = viewer.image.src;
+                        a.download = viewer.image.alt;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    },
+                },
+            });
+        });
+    </script>
+
+    <style>
+        .pictures>li {
+            border: 1px solid transparent;
+            float: left;
+            height: calc(100% / 1);
+            margin: 0 -1px -1px 0;
+            overflow: hidden;
+            width: calc(100% / 5);
+        }
+        
+        .pictures>li>img {
+            cursor: zoom-in;
+            width: 100%;
+        }
+        
+        .viewer-download {
+            color: #fff;
+            font-family: FontAwesome, serif;
+            font-size: 0.75rem;
+            line-height: 1.5rem;
+            text-align: center;
+        }
+        
+        .viewer-download::before {
+            content: "\f019";
+        }
+        
+        h4 {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+    <script src="https://unpkg.com/jquery@3/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap@4/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="./data/viewer.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var galley = document.getElementById('galley');
+            var viewer = new Viewer(galley, {
+                url: 'data-original',
+                title: function(image) {
+                    return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
+                },
+            });
+        });
+    </script>
+    </div>
+    <h6>2021 by lzt</h6>
+    </div>
+
+
+</body>
 
 </html>
